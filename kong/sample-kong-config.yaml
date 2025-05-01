@@ -1,0 +1,17 @@
+_format_version: "2.1"
+_transform: true
+
+services:
+  - name: httpbin
+    url: https://httpbin.org/anything
+    routes:
+      - name: httpbin
+        paths:
+          - /httpbin/test
+        strip_path: true
+        methods:
+          - GET
+          - POST
+        protocols:
+          - http
+          - https
